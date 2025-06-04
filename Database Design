@@ -1,1 +1,13 @@
+Common Performance Tuning Techniques in SQL Server
+Identify Performance Bottlenecks
+	Slow Queries- Use DMVs like sys.dm_exec_query_stats to find long-running queries.
+	Execution Plans- Check for table scans, missing indexes, and costly operations.
+	Activity Monitor - View real-time performance issues (CPU, memory, blocking).
+	Wait Stats - Use sys.dm_os_wait_stats to see where SQL Server is waiting (e.g., disk, CPU, locks).
+
+How to Fix Performance Issues
+	Indexing - Add missing indexes. Remove unused or duplicate indexes.
+	Query Optimization - Avoid SELECT *, Filter early using WHERE.
+	Update Statistics - Keep table stats up to date to help the query optimizer.
+	Fix Blocking & Deadlocks - Keep transactions short and Use correct isolation levels.
 
